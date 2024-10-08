@@ -4,6 +4,8 @@ on:
       branches: [main]
     pull_request:
       branches: [main]
+    #schedule:
+     #   - cron: '0 23 * * 1-5'  # Every weekday (Mon-Fri) at 11:00 PM UTC  
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
